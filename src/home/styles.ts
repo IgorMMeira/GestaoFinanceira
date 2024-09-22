@@ -27,7 +27,6 @@ export const Main = styled.main`
   width: 1120px;
 `;
 
-
 // HOME STYLES
 export const HomeSection = styled.section`
   height: calc(100vh + 80px);
