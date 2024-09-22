@@ -17,6 +17,7 @@ export const InputTitle = styled.div`
     font-weight: bold;
     margin-bottom: 5px;
 `;
+
 export const Input = styled.input`
     width: 100%;
     height: 30px;

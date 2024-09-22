@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, } from 'react';
 import * as C from './styles';
 import { Item } from '../../types/Item';
 import { categories } from '../../data/categories';
@@ -73,11 +73,13 @@ export const InputArea = ({ onAdd, inEdition }: Props) => {
     <C.Container>
       <C.InputLabel>
         <C.InputTitle>Data</C.InputTitle>
-        <C.Input type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
+        <C.Input as="input" type="date" value={dateField} onChange={(e: any) => setDateField(e.target.value)} />
       </C.InputLabel>
       <C.InputLabel>
         <C.InputTitle>Categoria</C.InputTitle>
-        <C.Select value={categoryField} onChange={e => setCategoryField(e.target.value)}>
+        <C.Select as="select"
+          value={categoryField}
+          onChange={(e: any) => setCategoryField(e.target.value)}>
           <>
             <option></option>
             {categoryKeys.map((key, index) => {
@@ -91,15 +93,25 @@ export const InputArea = ({ onAdd, inEdition }: Props) => {
       </C.InputLabel>
       <C.InputLabel>
         <C.InputTitle>Título</C.InputTitle>
-        <C.Input type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
+        <C.Input
+          as="input"
+          type="text"
+          value={titleField}
+          onChange={(e: any) => setTitleField(e.target.value)} />
       </C.InputLabel>
       <C.InputLabel>
         <C.InputTitle>Valor</C.InputTitle>
-        <C.Input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
+        <C.Input
+          as="input"
+          type="number"
+          value={valueField}
+          onChange={(e: any) => setValueField(parseFloat(e.target.value))} />
       </C.InputLabel>
       <C.InputLabel>
         <C.InputTitle>&nbsp;</C.InputTitle>
-        <C.Button onClick={handleAddEvent}>{isEdit ? "Editar" : "Adicionar"} </C.Button>
+        <C.Button onClick={handleAddEvent} as="button">
+          {isEdit ? "Editar" : "Adicionar"}
+        </C.Button>
       </C.InputLabel>
     </C.Container>
   );

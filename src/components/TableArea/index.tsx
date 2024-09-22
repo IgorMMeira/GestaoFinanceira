@@ -14,10 +14,10 @@ export const TableArea = ({ list, onRemove, onUpdate }: Props) => {
         <C.Table>
             <thead>
                 <tr>
-                    <C.TableHeadColumn width={100}>Data</C.TableHeadColumn>
-                    <C.TableHeadColumn width={130}>Categoria</C.TableHeadColumn>
-                    <C.TableHeadColumn>Título</C.TableHeadColumn>
-                    <C.TableHeadColumn width={150}>Valor</C.TableHeadColumn>
+                    <C.TableHeadColumn as="th" width={100}>Data</C.TableHeadColumn>
+                    <C.TableHeadColumn as="th" width={130}>Categoria</C.TableHeadColumn>
+                    <C.TableHeadColumn as="th">Título</C.TableHeadColumn>
+                    <C.TableHeadColumn as="th" width={150}>Valor</C.TableHeadColumn>
                 </tr>
             </thead>
             <tbody>

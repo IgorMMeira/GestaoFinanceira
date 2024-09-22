@@ -26,6 +26,7 @@ export const Button = styled.button`
     background-color: red;
     color: black;
     cursor: pointer;
+    font-weight: bold;
 
     &:hover {
         opacity:0.7;
@@ -42,6 +43,7 @@ export const ButtonEdit = styled.button`
     color: black;
     cursor: pointer;
     margin-right:15px;
+    font-weight: bold;
 
     &:hover {
         opacity:0.7;

@@ -17,19 +17,19 @@ export const TableItem = ({ item, index, onRemove, onUpdate }: Props) => {
         <C.TableLine>
             <C.TableColumn>{formatDate(item.date)}</C.TableColumn>
             <C.TableColumn>
-                <C.Category color={categories[item.category].color}>
+                <C.Category as="div" color={categories[item.category].color}>
                     {categories[item.category].title}
                 </C.Category>
             </C.TableColumn>
             <C.TableColumn>{item.title}</C.TableColumn>
             <C.TableColumn>
-                <C.Value color={categories[item.category].expense ? 'red' : 'green'}>
+                <C.Value as="div" color={categories[item.category].expense ? 'red' : 'green'}>
                     R$ {item.value}
                 </C.Value>
             </C.TableColumn>
             <C.TableColumn>
-                <C.ButtonEdit onClick={() => onUpdate(index, item)}>Editar</C.ButtonEdit>
-                <C.Button onClick={() => onRemove(index)}>Excluir</C.Button>
+                <C.ButtonEdit as="button" onClick={() => onUpdate(index, item)}>Editar</C.ButtonEdit>
+                <C.Button as="button" onClick={() => onRemove(index)}>Excluir</C.Button>
             </C.TableColumn>
         </C.TableLine>
     );
