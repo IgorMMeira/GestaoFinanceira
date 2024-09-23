@@ -13,7 +13,8 @@ export const AboutMe = () => {
                     <div className="home-info">
                         <h2>Olá, sou Igor</h2>
                         <C.HomeInfo>
-                            Fui eu
+                            Trabalho de Gestão financeira, foi utilizado para a conclusão deste trabalho
+                            as tecnologias React, tambem HTML, para estilização utilizei CSS, e tambem o Styled Components uma biblioteca do proprio React.
                         </C.HomeInfo>
                     </div>
                 </C.HomeSection>
