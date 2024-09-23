@@ -1,5 +1,4 @@
 import { HeaderPrivate } from '../components/HeaderPrivate/HeaderPrivate';
-import 'swiper/swiper-bundle.min.css'
 import * as C from './styles'
 
 

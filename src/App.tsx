@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { Item } from './types/Item';
 import { categories } from './data/categories';
 import { items } from './data/items';
