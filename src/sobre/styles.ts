@@ -24,7 +24,9 @@ export const GlobalStyle = createGlobalStyle`
 
 // Main Container
 export const Main = styled.main`
-  width: 1120px;
+  width: 100%;
+  justify-content: center;
+  
 `;
 
 

@@ -111,3 +111,41 @@ export const SubmitButton = styled.button<ButtonHTMLAttributes<HTMLButtonElement
     background-color: #ff0676;
   }
 `;
+
+export const GoogleButton = styled.button<ButtonHTMLAttributes<HTMLButtonElement>>`
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: #357ae8;
+    }
+`;
+
+export const ErrorMessage = styled.p`
+    color: red;
+    margin-top: 10px;
+`;
+
+export const RegisterButton = styled.button<ButtonHTMLAttributes<HTMLButtonElement>>`
+   background-color: #f72581;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none!important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0!important;
+  height: 50px;
+  width: 100%;
+  
+  &:hover {
+    transform: scale(1.05);
+    background-color: #ff0671;
+  }
+`;
